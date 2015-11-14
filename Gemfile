@@ -8,12 +8,19 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-group :development do
+group :test, :development do
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
+end
+
+group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
 
 group :test do
-
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 end
